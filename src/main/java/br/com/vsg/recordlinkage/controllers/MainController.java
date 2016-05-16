@@ -19,8 +19,12 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 import br.com.vsg.recordlinkage.entities.Link;
+import br.com.vsg.recordlinkage.entities.LinkListSingleton;
 import br.com.vsg.recordlinkage.entities.Listing;
+import br.com.vsg.recordlinkage.entities.ListingListSingleton;
+import br.com.vsg.recordlinkage.entities.MapLinkSingleton;
 import br.com.vsg.recordlinkage.entities.Product;
+import br.com.vsg.recordlinkage.entities.ProductListSingleton;
 import br.com.vsg.recordlinkage.services.LinkService;
 import br.com.vsg.recordlinkage.services.ListingService;
 import br.com.vsg.recordlinkage.services.ProductService;

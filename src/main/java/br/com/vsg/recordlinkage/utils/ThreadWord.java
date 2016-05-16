@@ -7,6 +7,7 @@ import java.util.Map;
 import java.util.Map.Entry;
 
 import br.com.vsg.recordlinkage.entities.Listing;
+import br.com.vsg.recordlinkage.entities.MapLinkSingleton;
 import br.com.vsg.recordlinkage.entities.Product;
 
 /**
