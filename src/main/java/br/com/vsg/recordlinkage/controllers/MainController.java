@@ -47,8 +47,8 @@ public class MainController {
 	MessageSource messageSource;
 
 	private List<Object> objectList;
-	private File productFile = new File("/home/steniogalvao/products.txt");
-	private File listingFile = new File("/home/steniogalvao/listings.txt");
+	private File productFile = new File("/home/products.txt");
+	private File listingFile = new File("/home/listings.txt");
 	private Map<Product, List<Listing>> linkMap;
 	private List<Link> links = new ArrayList<>();
 
@@ -196,6 +196,7 @@ public class MainController {
 		}
 		return "main";
 	}
+
 	@RequestMapping(value = { "/saveLinks" }, method = RequestMethod.GET)
 	public String saveLinks(ModelMap model) {
 		for (Link l : LinkListSingleton.getInstance()) {
