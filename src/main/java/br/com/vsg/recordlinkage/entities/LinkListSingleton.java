@@ -10,7 +10,7 @@ public class LinkListSingleton {
 	private LinkListSingleton() {
 	}
 
-	public synchronized static List<Link> getInstance() {
+	public static List<Link> getInstance() {
 		if (list == null)
 			list = new ArrayList<Link>();
 		return list;

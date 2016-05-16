@@ -20,7 +20,7 @@ public class ThreadPool {
 
 	public static void main(List<Map<String, List<Listing>>> listingMap,
 			List<Entry<String, List<Product>>> brandGroup) {
-		ExecutorService executor = Executors.newFixedThreadPool(1);
+		ExecutorService executor = Executors.newFixedThreadPool(8);
 		for (int i = 0; i < listingMap.size(); i++) {
 			Runnable worker1 = new ThreadWord(listingMap.get(i), brandGroup.get(i));
 			executor.execute(worker1);
@@ -36,7 +36,7 @@ public class ThreadPool {
 	 * 
 	 * @return boolean true when the process over
 	 */
-	public synchronized static boolean getFinish() {
+	public static boolean getFinish() {
 		return finish;
 
 	}

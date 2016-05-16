@@ -79,7 +79,7 @@ public class utils {
 	 * 
 	 * @return don't know yet
 	 **/
-	public synchronized static boolean searchWord(String text1, String text2, int method) {
+	public static boolean searchWord(String text1, String text2, int method) {
 		text1 = text1.toLowerCase();
 		text2 = text2.toLowerCase();
 		HashSet<String> t1 = splitToHashSet(text1);
@@ -128,7 +128,7 @@ public class utils {
 	 *            the string to split
 	 * @return HashSet string with the words splited, will not be repeated words
 	 **/
-	public synchronized static HashSet<String> splitToHashSet(String string) {
+	public static HashSet<String> splitToHashSet(String string) {
 		String[] splited = string.split("[ -]");
 		HashSet<String> result = new HashSet<String>();
 		for (String s : splited) {
