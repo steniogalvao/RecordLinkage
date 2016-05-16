@@ -1,4 +1,4 @@
-package infoway;
+package br.com.vsg.recordlinkage.test;
 
 import java.io.File;
 import java.io.FileNotFoundException;
